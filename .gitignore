@@ -1,0 +1,17 @@
+# Ignore raw Word Documents
+_docs/
+*.docx
+
+# Ignore intermediate text extraction
+extracted_texts.txt
+
+# (Optional) If you want to only track the source code, 
+# you can ignore the generated output. 
+# But if you are using GitHub Pages to host the site directly from GitHub, 
+# you might want to keep `public/` and deploy from there.
+# If you don't plan to use GitHub Pages, uncomment the line below:
+# public/
+
+# System Files
+.DS_Store
+Thumbs.db

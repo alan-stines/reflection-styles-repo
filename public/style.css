@@ -1,0 +1,108 @@
+:root {
+    --bs-body-bg: #0f0f13;
+    --bs-body-color: #e2e2e2;
+    --primary-accent: #633393;
+    --primary-hover: #7b42b5;
+    --secondary-accent: #9d70c4;
+    --darker-bg: #14141a;
+    --glass-bg: rgba(26, 26, 36, 0.7);
+    --glass-border: rgba(99, 51, 147, 0.3);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.text-primary-accent {
+    color: var(--primary-accent) !important;
+}
+
+.text-secondary-accent {
+    color: var(--secondary-accent) !important;
+}
+
+.bg-darker {
+    background-color: var(--darker-bg) !important;
+}
+
+/* Buttons */
+.btn-outline-primary {
+    color: var(--secondary-accent);
+    border-color: var(--primary-accent);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    color: white;
+}
+
+/* Custom Components */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    border-left: 4px solid var(--primary-accent);
+}
+
+/* Cards Animation */
+.style-card {
+    background: var(--darker-bg);
+    border: 1px solid rgba(255,255,255,0.05) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-top: 3px solid transparent !important;
+}
+
+.style-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5) !important;
+    border-top: 3px solid var(--primary-accent) !important;
+}
+
+/* Sidebar Styling */
+.sidebar-wrapper .list-group-item {
+    transition: all 0.2s;
+    font-size: 0.95rem;
+}
+
+.sidebar-wrapper .list-group-item:hover {
+    background-color: rgba(99, 51, 147, 0.15) !important;
+    color: var(--secondary-accent) !important;
+    padding-left: 1.5rem;
+}
+
+/* Layout utilities */
+.instruction-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bs-body-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-accent);
+}
